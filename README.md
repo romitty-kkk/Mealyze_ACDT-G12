@@ -1,7 +1,4 @@
 # Mealyze_ACDT-G12
-AI-based web service that recognizes food images and provides nutrition analysis and goal-aware meal recommendations using a structured food database.
-
-Mealyze — AI-Based Personalized Meal Advisor
 
 Mealyze is an AI-based personalized meal advisory system that combines
 food image recognition, a structured nutrition database, and context-aware recommendations
@@ -119,7 +116,7 @@ Short qualitative feedback
 
 Summarized and referenced in the Evidence Report (Appendix U).
 
-📑 Reports (Added at Submission)
+📑 Reports 
 
 The following documents are included in this repository for final submission:
 
@@ -131,8 +128,6 @@ Detailed appendix-style evidence document including:
 
 Data sources and licenses
 
-RWTS verification logs
-
 Food DB schema and labeling rules
 
 Nutrition provenance samples
@@ -143,11 +138,11 @@ All detailed data governance, licensing, and bias analysis are documented in Evi
 
 🔗 External Links
 
-Google Drive (full materials & backups):
-👉 (insert Google Drive link here)
+Google Drive :
+https://drive.google.com/drive/folders/1BsEpLKr7FObXB2jqxgw2I5prwWADBKB7?usp=sharing
 
 Demo Video (YouTube):
-👉 (insert YouTube demo video link here)
+https://youtu.be/rxnG7ObackQ
 
 🔐 Data Governance Note
 
