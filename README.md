@@ -4,7 +4,9 @@ Mealyze is an AI-based personalized meal advisory system that combines
 food image recognition, a structured nutrition database, and context-aware recommendations
 to support everyday meal decisions.
 
+
 🚨Attention🚨
+
 This demo uses LLaVA (GPU required), so we run it via Google Colab runtime instead of always-on GPU hosting.
 
 Works instantly when Colab is running; if the runtime is stopped, the web demo may not work properly.
