@@ -17,21 +17,25 @@ Provides an overview of the project, repository structure, and links to external
 🧠 AI Model & Labels
 food_classifier_mobilenetv2.h5
 
-Trained food image classification model.
+- Trained food image classification model.
 
-Architecture: MobileNetV2 (ImageNet-pretrained backbone).
+- Architecture: MobileNetV2 (ImageNet-pretrained backbone).
 
-Scope: 31 food classes (MVP label space).
+- Scope: 31 food classes (MVP label space).
 
-Used during inference to predict the most likely food category from an uploaded image.
+- Used during inference to predict the most likely food category from an uploaded image.
+
+  
 
 food_labels.json
 
-Label index mapping for the classifier.
+- Label index mapping for the classifier.
 
-Defines the 31 supported food classes and their numeric IDs.
+- Defines the 31 supported food classes and their numeric IDs.
 
-Referenced by both training and inference pipelines.
+- Referenced by both training and inference pipelines.
+
+  
 
 🏗 Training & Inference Code
 train_food_classifier_mobilenetv2.ipynb
