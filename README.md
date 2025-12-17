@@ -40,95 +40,66 @@ food_labels.json
 🏗 Training & Inference Code
 train_food_classifier_mobilenetv2.ipynb
 
-Training pipeline for the food image classifier.
+- Training pipeline for the food image classifier.
 
-Includes:
+- Includes: Data loading and preprocessing, Data augmentation, Model fine-tuning, Validation and checkpointing
 
-Data loading and preprocessing
+- Training data: AI-Hub Korean Food Image Dataset (31-class subset). https://aihub.or.kr/aihubdata/data/view.do?dataSetSn=79
 
-Data augmentation
+- Evaluation-only data (RWTS) is NOT used here to prevent data leakage.
 
-Model fine-tuning
-
-Validation and checkpointing
-
-Training data: AI-Hub Korean Food Image Dataset (31-class subset).
-
-Evaluation-only data (RWTS) is NOT used here to prevent data leakage.
+  
 
 serve_llava_mealyze_pipeline.ipynb
 
-Inference and service pipeline notebook.
+- Inference and service pipeline notebook.
 
-Demonstrates:
+- Demonstrates: Loading the trained image classifier, Running food image inference, Linking predictions to the structured Food DB, Generating nutrition summaries and recommendation signals
 
-Loading the trained image classifier
+-Used as the backend logic for the Mealyze prototype.
 
-Running food image inference
-
-Linking predictions to the structured Food DB
-
-Generating nutrition summaries and recommendation signals
-
-Used as the backend logic for the Mealyze prototype.
 
 🗄 Structured Food Database
 meal_advisor_food_db_v1.csv
 
-Structured Food Database (300 foods).
+- Structured Food Database (300 foods).
 
-Used as a retrieval-based knowledge base, not for model training.
+- Used as a retrieval-based knowledge base, not for model training.
 
-Contains:
+- Contains: Nutrition values (kcal, protein, fat, carbs per 1 serving), Context-aware tags (e.g., soul_food, hangover_friendly), Goal-based tags (cut_friendly, bulk_friendly, etc.), Safety & allergen tags (conservative labeling policy)
 
-Nutrition values (kcal, protein, fat, carbs per 1 serving)
+- Schema and labeling rules are documented in the Evidence Report (Appendix D).
 
-Context-aware tags (e.g., soul_food, hangover_friendly)
-
-Goal-based tags (cut_friendly, bulk_friendly, etc.)
-
-Safety & allergen tags (conservative labeling policy)
-
-Schema and labeling rules are documented in the Evidence Report (Appendix D).
+  
 
 🌐 Front-End Prototype
 index.html
 
-Lightweight front-end prototype UI.
+- Lightweight front-end prototype UI.
 
-Allows users to:
-
-Upload a food image
-
-View AI recognition results
-
-See nutrition information and guidance
-
-Designed as a demonstration interface, not a production deployment.
+- Allows users to: Upload a food image, View AI recognition results, See nutrition information and guidance, Designed as a demonstration interface, not a production deployment.
+  
 
 📊 Usability Evidence
 Mealyze – Quick Usefulness Survey.pdf
 
-Usability survey results (n = 10 participants).
+- Usability survey results (n = 10 participants).
 
-Includes:
+- Includes: Quantitative ratings (usefulness, clarity, satisfaction), Average scores, Short qualitative feedback
+  
+- Summarized and referenced in the Evidence Report (Appendix U).
 
-Quantitative ratings (usefulness, clarity, satisfaction)
-
-Average scores
-
-Short qualitative feedback
-
-Summarized and referenced in the Evidence Report (Appendix U).
+  
 
 📑 Reports 
 
 The following documents are included in this repository for final submission:
 
-Final_Report.pdf
+-Final_Report.pdf
 Full project report describing motivation, system design, modeling choices, and results.
 
-Evidence_Report.pdf
+
+-Evidence_Report.pdf
 Detailed appendix-style evidence document including:
 
 Data sources and licenses
@@ -141,6 +112,7 @@ Usability evaluation evidence
 
 All detailed data governance, licensing, and bias analysis are documented in Evidence_Report.pdf.
 
+
 🔗 External Links
 
 Google Drive :
@@ -148,6 +120,7 @@ https://drive.google.com/drive/folders/1BsEpLKr7FObXB2jqxgw2I5prwWADBKB7?usp=sha
 
 Demo Video (YouTube):
 https://youtu.be/rxnG7ObackQ
+
 
 🔐 Data Governance Note
 
@@ -160,6 +133,7 @@ RWTS images are used only for qualitative robustness checks, never for training.
 Nutrition values are provided as representative guide values, not medical advice.
 
 Please refer to the Evidence Report for complete documentation.
+
 
 📌 Disclaimer
 
