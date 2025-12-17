@@ -124,6 +124,8 @@ https://youtu.be/rxnG7ObackQ
 Presentation Video (YouTube):
 https://youtu.be/uA3Zm2kcd5Q
 
+Live URL: https://romitty-kkk.github.io/Mealyze_ACDT-G12/
+
 
 🔐 Data Governance Note
 
